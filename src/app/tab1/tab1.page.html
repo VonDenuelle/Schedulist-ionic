@@ -1,17 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" scroll="false">
+  <div class="content-container">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <!-- Time Today Header -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>12:54 PM</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Monday, Mar 26, 2022
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Current Task -->
+    <ion-card class="full-height-card">
+      <ion-card class="current-task">
+        <ion-card-header>
+          <ion-card-title>Current Task</ion-card-title>
+          <ion-item-divider></ion-item-divider>
+        </ion-card-header>
+
+        <ion-card-content>
+          Some task description that you should be doing right now
+        </ion-card-content>
+
+        <p>Started: 9:00 PM</p>
+        <ion-button expand="block">Done</ion-button>
+
+      </ion-card>
+
+      <!-- Next Task -->
+      <ion-card class="next-task-card">
+        <ion-card-header>
+          <ion-card-title>Next Task</ion-card-title>
+          <ion-item-divider></ion-item-divider>
+        </ion-card-header>
+
+        <ion-card-content>
+          Some description of next task
+          then put ellipsis to stop overflow.
+          also clickable(open modal) to
+          show full description
+        </ion-card-content>
+      </ion-card>
+    </ion-card>
+
+
+
+  </div>
+
+
+
 </ion-content>

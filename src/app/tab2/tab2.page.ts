@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private router: Router) {}
 
+  buttonClick(day : string){
+    // add day GET parameter
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        day : day
+      }
+    };
+    this.router.navigate(['task'], navigationExtras)
+  }
 }

@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Tasks
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,54 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-item button (click)="buttonClick('Monday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Monday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Tuesday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Tuesday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Wednesday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Wednesday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Thusday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Thusday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Friday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Friday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Saturday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Saturday Task
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick('Sunday')" lines="none">
+    <ion-toggle slot="end" name="blueberry"  checked></ion-toggle>
+    <ion-label>
+      Sunday Task
+    </ion-label>
+  </ion-item>
+
 </ion-content>
